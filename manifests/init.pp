@@ -8,5 +8,5 @@ class keybase {
     version      => '~> 1',
     node_version => '*',
   } ~>
-  exec { 'keybase-installer': }
+  exec { '/opt/boxen/nodenv/shims/keybase-installer': }
 }
