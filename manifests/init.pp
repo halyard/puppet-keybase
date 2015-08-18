@@ -7,6 +7,8 @@ class keybase {
     module       => 'keybase-installer',
     version      => '~> 1',
     node_version => '*',
-  } ~>
-  exec { '/opt/boxen/nodenv/shims/keybase-installer': }
+  } ->
+  exec { '/opt/boxen/nodenv/shims/keybase-installer':
+    schedule => 'daily'
+  }
 }
