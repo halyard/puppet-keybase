@@ -12,5 +12,4 @@ include keybase
 ## Required Puppet Modules
 
 * `boxen`
-* `nodejs`
 
