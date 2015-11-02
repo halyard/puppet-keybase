@@ -1,4 +1,6 @@
 # Install keybase
 class keybase {
-  package { 'keybase-halyard': }
+  package { 'keybase-halyard':
+    require => Homebrew::Tap['halyard/formulae']
+  }
 }
